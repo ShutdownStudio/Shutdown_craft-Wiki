@@ -1,0 +1,129 @@
+<!-- wp:paragraph -->
+<p><strong><mark style="background-color:#cf2e2e" class="has-inline-color has-white-color">转载、摘抄、引用本文请先征得ShutdownStudio书面同意！</mark></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>前言</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>欢迎加入Shutdown_craft，这是一个几乎坚持原版玩法的生存服务器，我们做的就是在原版的基础上使游玩更加方便。我们加入了很多插件来实现我们的目标，但是各个插件有不同的使用方法或者指令，所以我们整理了这一份Wiki，这里列举了服务器所有功能以及其对应的使用方法。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>安全类</h1>
+<!-- /wp:heading -->
+
+<!-- wp:heading -->
+<h2><mark style="background-color:#fcb900" class="has-inline-color has-white-color">登录系统<sub>AuthMe</sub></mark></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>我们使用AuthMe插件进行身份认证。因为我们关闭了正版验证以让更多玩家可以进入我们的服务器，所以这使得任何人只需要修改自己的用户名便可以登录您的账户，所以我们加入了认证系统来保障您的账户安全。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>指令</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li><strong>/register &lt;密码&gt; &lt;确认密码&gt;</strong>（或/reg）：注册账户<br>*<em>通常情况下此命令只能在注册时使用</em><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /register 114514 114514</mark></li><li><strong>/login &lt;密码&gt;</strong>（或/l）：登录<br>*<em>下线超过10分钟服务器便会要求您验证您的身份</em><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /login 114514</mark></li><li><strong>/logout</strong>：退出登录<br>*<em>这会立即要求您输入密码</em>。<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">请注意：180秒未认证的用户会被强制踢出服务器！</mark><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /logout</mark></li><li><strong>/changepassword &lt;旧密码&gt; &lt;新密码&gt;</strong>（或/changepass）：更改密码<br>*<em>下线超过10分钟服务器便会要求您验证您的身份</em><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /changepassword 114514 11145141919810</mark></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3>补充说明</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li>我们使用HASH算法并加盐来保存您的密码，HASH算法计算后输出的内容是不可能还原出源数据的。简而言之我们无法知道你们设定了什么密码；您的密码只有您知道。</li><li>如果您忘记密码，请联系管理员，我们会在验证您的身份后为您重置密码。</li><li>如果您发现您的账户被他人登录过，我们可以为您提供您的账户的最后登录时间。</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2><mark style="background-color:#fcb900" class="has-inline-color has-white-color">方块更新查询<sub>CoreProtect</sub></mark></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>该功能依靠CoreProtect插件。该插件可以查询任何方块的更新记录：包括方块的放置、破坏时间；箱子何时放入或取出何种物品等等。人话：查熊孩子神器2333333333333<br><strong><mark style="background-color:#cf2e2e" class="has-inline-color has-white-color">！！！如果发现有熊孩子把你家搞了，请凭此插件的查询结果向管理员举报！！！</mark></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>指令</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>/co inspect</strong>（或/co i）：进入查询模式<br><em>*再次输入该命令即可退出查询模式，具体操作方法请参阅下方的 特性 栏目</em><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /co i</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>特性</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li><strong>查询模式</strong>：<br>进入该模式后您可以左键或右键任意方块以查询该方块的更新记录（使用左右键单击容器的输出结果不同）</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3>补充说明</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li>警告：由于该插件会产生大量的数据，所以插件会自动(强制)删除过期的记录，即该插件只能保存大约10-20天的数据</li><li>管理员可以使用该插件恢复指定区域的建筑（包括容器内的物品）</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2><mark style="background-color:#fcb900" class="has-inline-color has-white-color">箱子锁<sub>Dreamchest</sub></mark></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>为了防止您的物品被他人偷窃，我们使用Dreamchest来保护您存在容器内的物品</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>特性</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li><strong>上锁：</strong>当您放置了可以被上锁的方块时，方块便会自动上锁。除非您使用管理面板修改其状态，否则任何人(管理员除外)都无法打开、破坏、移动该方块</li><li><strong>管理：</strong>使用【Shift键】+【右键】打开管理面板</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":1} -->
+<h1>娱乐类</h1>
+<!-- /wp:heading -->
+
+<!-- wp:heading -->
+<h2><mark style="background-color:#fcb900" class="has-inline-color has-white-color">全服音乐<sub>AllMusic</sub></mark></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><mark style="background-color:#cf2e2e" class="has-inline-color has-white-color">您需要先安装一个MOD。不安装MOD不会导致您无法进入服务器但是您将无法体验该功能</mark><br><mark style="background-color:#00d084" class="has-inline-color has-white-color">如果您不知道怎么安装，请加入我们的Q群</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:file {"id":783,"href":"https://www.shutdownstudio.top/wp-content/uploads/2022/07/A全服音乐AllMusic-2.5.11Forge.jar.jar"} -->
+<div class="wp-block-file"><a id="wp-block-file--media-35c570b4-7770-48b2-ab24-d2d36ad34b0e" href="https://www.shutdownstudio.top/wp-content/uploads/2022/07/A全服音乐AllMusic-2.5.11Forge.jar.jar">A全服音乐AllMusic-2.5.11Forge.jar</a><a href="https://www.shutdownstudio.top/wp-content/uploads/2022/07/A全服音乐AllMusic-2.5.11Forge.jar.jar" class="wp-block-file__button" download aria-describedby="wp-block-file--media-35c570b4-7770-48b2-ab24-d2d36ad34b0e">下载Forge版</a></div>
+<!-- /wp:file -->
+
+<!-- wp:file {"id":782,"href":"https://www.shutdownstudio.top/wp-content/uploads/2022/07/A全服音乐AllMusic-2.5.12Fabric.jar"} -->
+<div class="wp-block-file"><a id="wp-block-file--media-bf18d51b-a8b6-4b12-b7cc-a465efc637c7" href="https://www.shutdownstudio.top/wp-content/uploads/2022/07/A全服音乐AllMusic-2.5.12Fabric.jar">A全服音乐AllMusic-2.5.12Fabric</a><a href="https://www.shutdownstudio.top/wp-content/uploads/2022/07/A全服音乐AllMusic-2.5.12Fabric.jar" class="wp-block-file__button" download aria-describedby="wp-block-file--media-bf18d51b-a8b6-4b12-b7cc-a465efc637c7">下载Fabric版</a></div>
+<!-- /wp:file --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>AllMusic可以获取网易云的音乐并在全服播放，你可以点一首<s>HOP</s>音乐来让大伙来听听！(PS:腐竹有黑胶，所以你可以点一些VIP专享的~)。安装好MOD后，进入我们的服务器后：你只需要【搜索音乐】→【点击要播放的音乐】就可以随时随地听到音乐啦~</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>指令</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li><strong>/music search：</strong>搜索音乐<br><em>*<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">仅支持网易云音乐有版权的</mark>(可以是VIP的但是不能是付费的)</em><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /music search hop</mark></li><li><strong>/music vote：</strong>投票切歌<br><em>*如果你很讨厌这首歌，你可以试着投票切歌。如果大家都不喜欢这首歌，那么服务器就会自动切歌</em><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /music vote</mark></li><li><strong>/music stop：</strong>停止播放<br><em>*只会让你自己听不到，其他人还是能听到的</em><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /music stop</mark></li><li><strong>/music list：</strong>查看播放列表<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-green-cyan-color">Example: /music list</mark></li><li><strong>/music help：</strong>查看更多帮助......<br></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3>补充说明</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li>请不要使用此功能骚扰他人</li><li>如果你发现有人恶意使用该插件骚扰他人，请向管理员举报，我们可能会移除该用户的点歌权限或将歌曲加入黑名单</li><li>请不要单曲循环(长时间点同一首歌且服务器有其他玩家也在游玩)</li><li>请不要点超过8分钟的音乐</li><li>点歌请把握节奏，这个账号的黑胶是腐竹用真金白银买的，不想被封</li><li>只能搜索并播放网易云的歌曲！只能搜索并播放网易云的歌曲！只能搜索并播放网易云的歌曲！</li></ol>
+<!-- /wp:list -->
